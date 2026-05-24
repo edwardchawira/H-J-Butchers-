@@ -15,14 +15,31 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hjbutchers.example"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "H&J Butchers | Premium British Meat Delivered",
     template: "%s | H&J Butchers",
   },
   description:
     "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
+  openGraph: {
+    type: "website",
+    siteName: "H&J Butchers",
+    title: "H&J Butchers | Premium British Meat Delivered",
+    description:
+      "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "H&J Butchers | Premium British Meat Delivered",
+    description:
+      "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
+  },
 };
 
 export default function RootLayout({
