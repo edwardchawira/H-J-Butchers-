@@ -12,6 +12,7 @@ const links = [
   { name: "Beef", href: "/category/beef" },
   { name: "Chicken", href: "/category/chicken" },
   { name: "BBQ", href: "/category/bbq" },
+  { name: "Beverages", href: "/category/beverages" },
   { name: "About", href: "/about" },
   { name: "Recipes", href: "/blog" },
   { name: "Contact", href: "/contact" },

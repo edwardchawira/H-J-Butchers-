@@ -24,6 +24,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!product) notFound();
   const related = productsByCategory(product.category).filter((entry) => entry.id !== product.id).slice(0, 3);
   const nutrition = product.nutritionalInfo;
+  const isBeverage = product.category === "beverages";
 
   return (
     <>
@@ -36,15 +37,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="container-site grid gap-10 lg:grid-cols-2">
           <div>
             <p className="eyebrow">The detail</p>
-            <h2 className="mt-3 text-3xl">Butcher&apos;s notes</h2>
+            <h2 className="mt-3 text-3xl">{isBeverage ? "Serving notes" : "Butcher's notes"}</h2>
             <p className="mt-5 leading-8 text-muted">
-              Cut and packed on the day of dispatch. Store refrigerated below 5°C and consume within the use-by date, or freeze on receipt.
+              {isBeverage
+                ? "Serve ice cold for a refreshing drink with your meal. Store in a cool, dry place and refrigerate before serving."
+                : "Cut and packed on the day of dispatch. Store refrigerated below 5°C and consume within the use-by date, or freeze on receipt."}
             </p>
           </div>
           <Accordion items={[
-            { title: "Nutritional information (per 100g)", content: `${nutrition.calories} kcal | Protein ${nutrition.protein}g | Fat ${nutrition.fat}g | Carbohydrate ${nutrition.carbs}g.` },
-            { title: "Provenance & preparation", content: `Tags: ${product.tags.join(", ")}. Prepared in our butcher shop by trained craftspeople.` },
-            { title: "Delivery & storage", content: "Arrives in temperature-controlled packaging. Refrigerate immediately or freeze on delivery for later enjoyment." },
+            { title: nutrition ? "Nutritional information (per 100g)" : "Nutritional information", content: nutrition ? `${nutrition.calories} kcal | Protein ${nutrition.protein}g | Fat ${nutrition.fat}g | Carbohydrate ${nutrition.carbs}g.` : "Please see product packaging for current nutritional information." },
+            { title: isBeverage ? "Product information" : "Provenance & preparation", content: isBeverage ? `Tags: ${product.tags.join(", ")}.` : `Tags: ${product.tags.join(", ")}. Prepared in our butcher shop by trained craftspeople.` },
+            { title: "Delivery & storage", content: isBeverage ? "Delivered securely with your order. Store in a cool, dry place and refrigerate before serving." : "Arrives in temperature-controlled packaging. Refrigerate immediately or freeze on delivery for later enjoyment." },
           ]} />
         </div>
       </section>

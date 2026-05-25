@@ -20,7 +20,7 @@ export type Product = {
     protein: number;
     fat: number;
     carbs: number;
-  };
+  } | null;
   featured?: boolean;
   newArrival?: boolean;
 };
@@ -45,6 +45,10 @@ const imagery = {
   bbq: [
     "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1000&q=80",
     "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+  ],
+  beverages: [
+    "/images/sparletta-cherry-plum-product.png",
+    "/images/sparletta-cherry-plum.png",
   ],
   sausages: [
     "https://images.unsplash.com/photo-1585325701165-351af916e581?auto=format&fit=crop&w=1000&q=80",
@@ -107,6 +111,8 @@ export const products: Product[] = [
   make("q1", "Smoky BBQ Rib Rack", "bbq", 17.95, "750g", "Tender pork ribs glazed in our smoky molasses barbecue sauce.", { featured: true, tags: ["Marinated", "BBQ ready"] }),
   make("q2", "Butcher's BBQ Feast Box", "bbq", 49.95, "Serves 6", "Burgers, sausages, skewers and ribs curated for the grill.", { featured: true, weightOptions: ["Serves 6", "Serves 10"], rating: 4.9, reviewCount: 108 }),
   make("q3", "Pepper Steak Kebabs", "bbq", 12.95, "4 skewers", "Tender steak cubes, peppers and onions, ready for flames.", { tags: ["British", "BBQ ready"], stockLevel: "low" }),
+  make("v1", "Sparletta Cherry Plum Soft Drink", "beverages", 2.99, "Single can", "A sparkling cherry plum soft drink, best served ice cold alongside your barbecue favourites.", { newArrival: true, tags: ["Soft drink", "Low kilojoule"], nutritionalInfo: null, weightOptions: ["Single can"] }),
+  make("v2", "Sparletta Pinenut Soft Drink", "beverages", 2.99, "330ml can", "A bright and refreshing pine nut soft drink, best served chilled with your meal.", { images: ["/images/sparletta-pinenut-product.png"], newArrival: true, tags: ["Soft drink"], nutritionalInfo: null, weightOptions: ["330ml can"] }),
   make("s1", "Cumberland Pork Sausages", "sausages", 6.95, "6 pack", "Coarsely ground pork with pepper, sage and nutmeg.", { featured: true, tags: ["Free Range", "Gluten free"], weightOptions: ["6 pack", "12 pack"] }),
   make("s2", "Pork & Caramelised Onion Sausages", "sausages", 7.25, "6 pack", "Award-style bangers balanced with sweet cooked onion.", { rating: 4.7 }),
   make("s3", "Chicken & Herb Sausages", "sausages", 6.5, "6 pack", "A lighter sausage packed with parsley and thyme.", { tags: ["Lean", "High protein"], nutritionalInfo: { calories: 145, protein: 20, fat: 7, carbs: 2 } }),
