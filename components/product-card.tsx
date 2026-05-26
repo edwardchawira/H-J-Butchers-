@@ -5,7 +5,7 @@ import { Eye, Heart, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/data/products";
-import { formatMoney } from "@/lib/utils";
+import { cn, formatMoney } from "@/lib/utils";
 import { useCartStore } from "@/store/cart-store";
 import { Button } from "@/components/ui/button";
 import { ReviewStars } from "@/components/review-stars";
@@ -15,6 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
   const addItem = useCartStore((state) => state.addItem);
   const toggleWishlist = useCartStore((state) => state.toggleWishlist);
   const wished = useCartStore((state) => state.hasHydrated && state.wishlistIds.includes(product.id));
+  const containImage = product.imageFit === "contain";
 
   return (
     <article className="card-lift group overflow-hidden rounded-sm border border-soft-border bg-warm-white">
@@ -25,7 +26,10 @@ export function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             width={600}
             height={600}
-            className="aspect-square w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            className={cn(
+              "aspect-square w-full transition duration-500",
+              containImage ? "object-contain p-3" : "object-cover group-hover:scale-[1.03]",
+            )}
           />
         </Link>
         <div className="absolute left-3 top-3">
@@ -49,7 +53,16 @@ export function ProductCard({ product }: { product: Product }) {
             <Dialog.Overlay className="fixed inset-0 z-50 bg-charcoal/60" />
             <Dialog.Content className="fixed left-1/2 top-1/2 z-50 grid w-[min(94vw,54rem)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-sm bg-white shadow-2xl md:grid-cols-2">
               <Dialog.Title className="sr-only">{product.name}</Dialog.Title>
-              <Image src={product.images[0]} alt={product.name} width={600} height={650} className="h-full max-h-96 w-full object-cover md:max-h-none" />
+              <Image
+                src={product.images[0]}
+                alt={product.name}
+                width={600}
+                height={650}
+                className={cn(
+                  "h-full max-h-96 w-full md:max-h-none",
+                  containImage ? "bg-white object-contain p-6" : "object-cover",
+                )}
+              />
               <div className="relative p-7">
                 <Dialog.Close className="absolute right-5 top-5 p-1" aria-label="Close quick view"><X className="h-5 w-5" /></Dialog.Close>
                 <StockBadge level={product.stockLevel} />

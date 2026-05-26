@@ -30,7 +30,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     <>
       <Breadcrumb items={[{ label: "Shop", href: "/shop" }, { label: product.name }]} />
       <section className="container-site grid gap-10 pb-14 lg:grid-cols-2 lg:gap-14">
-        <ProductGallery images={product.images} name={product.name} />
+        <ProductGallery images={product.images} name={product.name} imageFit={product.imageFit} />
         <ProductActions product={product} />
       </section>
       <section className="border-y border-soft-border bg-white py-14">

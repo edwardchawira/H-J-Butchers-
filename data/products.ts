@@ -21,6 +21,7 @@ export type Product = {
     fat: number;
     carbs: number;
   } | null;
+  imageFit?: "cover" | "contain";
   featured?: boolean;
   newArrival?: boolean;
 };
@@ -113,6 +114,13 @@ export const products: Product[] = [
   make("q3", "Pepper Steak Kebabs", "bbq", 12.95, "4 skewers", "Tender steak cubes, peppers and onions, ready for flames.", { tags: ["British", "BBQ ready"], stockLevel: "low" }),
   make("v1", "Sparletta Cherry Plum Soft Drink", "beverages", 2.99, "Single can", "A sparkling cherry plum soft drink, best served ice cold alongside your barbecue favourites.", { newArrival: true, tags: ["Soft drink", "Low kilojoule"], nutritionalInfo: null, weightOptions: ["Single can"] }),
   make("v2", "Sparletta Pinenut Soft Drink", "beverages", 2.99, "330ml can", "A bright and refreshing pine nut soft drink, best served chilled with your meal.", { images: ["/images/sparletta-pinenut-product.png"], newArrival: true, tags: ["Soft drink"], nutritionalInfo: null, weightOptions: ["330ml can"] }),
+  make("v3", "Sparletta Creme Soda Soft Drink", "beverages", 2.99, "330ml can", "A smooth and refreshing creme soda soft drink, best served ice cold with your meal.", { images: ["/images/sparletta-creme-soda-product.png"], newArrival: true, tags: ["Soft drink"], nutritionalInfo: null, weightOptions: ["330ml can"] }),
+  make("v4", "Pfuko Maheu Buttermilk 500ml", "beverages", 2.99, "500ml bottle", "A smooth and refreshing ready-to-drink cultured buttermilk beverage, best served chilled.", { images: ["/images/pfuko-maheu-buttermilk-product.png"], newArrival: true, tags: ["Buttermilk drink"], nutritionalInfo: null, weightOptions: ["500ml bottle"] }),
+  make("v5", "Original Pfuko Dairiboard Maheu", "beverages", 3.5, "500ml bottle", "The original ready-to-drink Pfuko yeMaheu beverage from Dairibord, best served chilled.", { images: ["/images/original-pfuko-dairiboard-maheu-product.png"], imageFit: "contain", newArrival: true, tags: ["Maheu drink"], nutritionalInfo: null, weightOptions: ["500ml bottle"] }),
+  make("v6", "Mazoe Orange 2L", "beverages", 8.99, "2L bottle", "Original Mazoe orange crush, a rich and refreshing fruit drink best served chilled.", { images: ["/images/mazoe-orange-2l-product.png"], imageFit: "contain", newArrival: true, tags: ["Fruit drink"], nutritionalInfo: null, weightOptions: ["2L bottle"] }),
+  make("v7", "Mazoe Cream Soda 2L", "beverages", 8.99, "2L bottle", "Original Mazoe cream soda flavoured syrup, a refreshing drink best served chilled.", { images: ["/images/mazoe-cream-soda-2l-product.png"], imageFit: "contain", newArrival: true, tags: ["Flavoured syrup"], nutritionalInfo: null, weightOptions: ["2L bottle"] }),
+  make("v8", "Cascade Baobab 500ml Bottle", "beverages", 2.99, "500ml bottle", "A creamy baobab dairy fruit mix drink, refreshing and ready to enjoy chilled.", { images: ["/images/cascade-baobab-500ml-product.png"], imageFit: "contain", newArrival: true, tags: ["Dairy fruit mix"], nutritionalInfo: null, weightOptions: ["500ml bottle"] }),
+  make("v9", "Cascade Dairy Mix Tropical and Orange 500ml", "beverages", 2.99, "500ml bottle", "A tropical punch flavoured dairy fruit mix drink with bright orange notes, best served chilled.", { images: ["/images/cascade-tropical-orange-500ml-product.png"], imageFit: "contain", newArrival: true, tags: ["Dairy fruit mix"], nutritionalInfo: null, weightOptions: ["500ml bottle"] }),
   make("s1", "Cumberland Pork Sausages", "sausages", 6.95, "6 pack", "Coarsely ground pork with pepper, sage and nutmeg.", { featured: true, tags: ["Free Range", "Gluten free"], weightOptions: ["6 pack", "12 pack"] }),
   make("s2", "Pork & Caramelised Onion Sausages", "sausages", 7.25, "6 pack", "Award-style bangers balanced with sweet cooked onion.", { rating: 4.7 }),
   make("s3", "Chicken & Herb Sausages", "sausages", 6.5, "6 pack", "A lighter sausage packed with parsley and thyme.", { tags: ["Lean", "High protein"], nutritionalInfo: { calories: 145, protein: 20, fat: 7, carbs: 2 } }),

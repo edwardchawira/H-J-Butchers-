@@ -5,7 +5,7 @@ import { Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { products } from "@/data/products";
-import { deliveryCost, formatMoney, FREE_DELIVERY_THRESHOLD } from "@/lib/utils";
+import { cn, deliveryCost, formatMoney, FREE_DELIVERY_THRESHOLD } from "@/lib/utils";
 import { cartSubtotal, useCartStore } from "@/store/cart-store";
 import { Button } from "@/components/ui/button";
 
@@ -58,7 +58,7 @@ export function CartDrawer() {
                       alt={product.name}
                       width={88}
                       height={88}
-                      className="h-22 w-22 rounded-sm object-cover"
+                      className={cn("h-22 w-22 rounded-sm", product.imageFit === "contain" ? "bg-white object-contain p-1" : "object-cover")}
                     />
                     <div className="min-w-0 flex-1">
                       <Link

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
-import { deliveryCost, formatMoney, FREE_DELIVERY_THRESHOLD } from "@/lib/utils";
+import { cn, deliveryCost, formatMoney, FREE_DELIVERY_THRESHOLD } from "@/lib/utils";
 import { cartSubtotal, useCartStore } from "@/store/cart-store";
 
 export function CartPageContent() {
@@ -46,7 +46,7 @@ export function CartPageContent() {
             if (!product) return null;
             return (
               <article key={`${item.productId}-${item.weight}`} className="flex gap-4 py-6 sm:gap-6">
-                <Image src={product.images[0]} alt={product.name} width={132} height={132} className="h-26 w-26 rounded-sm object-cover sm:h-32 sm:w-32" />
+                <Image src={product.images[0]} alt={product.name} width={132} height={132} className={cn("h-26 w-26 rounded-sm sm:h-32 sm:w-32", product.imageFit === "contain" ? "bg-white object-contain p-1" : "object-cover")} />
                 <div className="flex flex-1 flex-col justify-between gap-3 sm:flex-row">
                   <div>
                     <Link href={`/products/${product.slug}`} className="font-display text-xl font-semibold hover:text-oxblood">{product.name}</Link>
