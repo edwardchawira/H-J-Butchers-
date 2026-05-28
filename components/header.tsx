@@ -13,6 +13,7 @@ const links = [
   { name: "Chicken", href: "/category/chicken" },
   { name: "BBQ", href: "/category/bbq" },
   { name: "Beverages", href: "/category/beverages" },
+  { name: "Snacks and Confectionery", href: "/category/snacks-confectionery" },
   { name: "About", href: "/about" },
   { name: "Recipes", href: "/blog" },
   { name: "Contact", href: "/contact" },
@@ -47,12 +48,12 @@ export function Header() {
           <Link href="/" className="shrink-0 text-center text-oxblood" aria-label="H&J Butchers home">
             <span className="font-display block text-3xl font-bold leading-none">H&amp;J Butchers</span>
           </Link>
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-4 lg:flex" aria-label="Main navigation">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold uppercase tracking-wider transition hover:text-oxblood"
+                className="whitespace-nowrap text-xs font-semibold uppercase tracking-wider transition hover:text-oxblood"
               >
                 {link.name}
               </Link>

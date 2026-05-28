@@ -57,8 +57,8 @@ export function ShopCatalogue({ initialCategory, initialSearch = "" }: { initial
         </div>
         {filtered.length === 0 ? (
           <div className="rounded-sm bg-white p-12 text-center">
-            <h2 className="text-2xl">No cuts match your selection</h2>
-            <p className="mt-2 text-muted">Try clearing filters or searching another product.</p>
+            <h2 className="text-2xl">No products match your selection</h2>
+            <p className="mt-2 text-muted">Try clearing filters or browsing another category.</p>
           </div>
         ) : (
           <>

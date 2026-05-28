@@ -8,6 +8,7 @@ const shopping = [
   ["Chicken", "/category/chicken"],
   ["BBQ", "/category/bbq"],
   ["Beverages", "/category/beverages"],
+  ["Snacks and Confectionery", "/category/snacks-confectionery"],
 ];
 const information = [
   ["About us", "/about"],

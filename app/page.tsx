@@ -25,7 +25,7 @@ const reasons = [
   { icon: Truck, title: "Chilled delivery", text: "Insulated, recyclable packaging protects every order." },
 ];
 
-const heroSlides = ["lamb", "chicken", "burgers", "pork", "sausages"].flatMap((slug) => {
+const heroSlides = ["lamb", "chicken", "burgers", "pork", "sausages", "beverages", "snacks-confectionery"].flatMap((slug) => {
   const category = categories.find((entry) => entry.slug === slug);
   return category ? [{ image: category.image, name: category.name }] : [];
 });
