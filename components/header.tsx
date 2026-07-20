@@ -45,8 +45,8 @@ export function Header() {
           >
             {mobileOpen ? <X /> : <Menu />}
           </button>
-          <Link href="/" className="shrink-0 text-center text-oxblood" aria-label="H&J Butchers home">
-            <span className="font-display block text-3xl font-bold leading-none">H&amp;J Butchers</span>
+          <Link href="/" className="shrink-0 text-center text-oxblood" aria-label="Just Butcher home">
+            <span className="font-display block text-3xl font-bold leading-none">Just Butcher</span>
           </Link>
           <nav className="hidden items-center gap-4 lg:flex" aria-label="Main navigation">
             {links.map((link) => (

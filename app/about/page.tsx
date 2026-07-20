@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Meet H&J Butchers founders Heath Vermaak and Wai Yee Chan and discover our passion for quality meat and expert service.",
+  description: "Discover the Just Butcher concept storefront and its focus on quality meat, practical ecommerce journeys and expert service.",
 };
 
 const values = [
@@ -20,8 +20,8 @@ const values = [
   },
   {
     icon: Heart,
-    title: "Local & Trusted",
-    description: "Proud to be part of the community we serve.",
+    title: "Built For Trust",
+    description: "Demo-ready sections for provenance, service and customer confidence.",
   },
 ];
 
@@ -41,10 +41,10 @@ export default function AboutPage() {
           </h1>
           <div className="mt-7 h-px w-36 bg-[#d4bda6]" aria-hidden="true" />
           <p className="mt-6 max-w-md text-[0.96rem] leading-7 text-charcoal">
-            At H&amp;J Butchers, we&apos;ve been serving our community with the finest quality meat and exceptional service. Founded by Heath Vermaak and Wai Yee Chan.
+            Just Butcher is a premium ecommerce demo for independent butchers, farm shops and food retailers that want a polished online storefront.
           </p>
           <p className="mt-4 max-w-md text-[0.96rem] leading-7 text-charcoal">
-            Our expert butchers take pride in every cut, sourcing responsibly and preparing everything to the highest standards. It&apos;s our passion for quality and our commitment to you that sets us apart.
+            The experience is designed to show how product storytelling, category-led shopping and a smooth basket journey can help customers buy with confidence.
           </p>
           <p className="mt-7 text-sm font-bold text-oxblood">
             Quality you can taste. Service you can trust.
@@ -63,15 +63,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="grid gap-1 bg-white p-1 sm:h-[clamp(220px,20.7vw,316px)] sm:grid-cols-[5fr_5fr_6fr]" aria-label="H&J Butchers gallery">
+      <section className="grid gap-1 bg-white p-1 sm:h-[clamp(220px,20.7vw,316px)] sm:grid-cols-[5fr_5fr_6fr]" aria-label="Just Butcher gallery">
         <div className="about-photo about-shop-photo aspect-[1.5] sm:aspect-auto">
-          <Image src="/images/about-us-showcase.jpg" alt="H&J Butchers shop sign" width={1536} height={1024} sizes="(min-width: 640px) 32vw, 100vw" />
+          <Image src="/images/about-us-showcase.jpg" alt="Premium butcher counter with prepared steaks" width={1536} height={1024} sizes="(min-width: 640px) 32vw, 100vw" />
         </div>
         <div className="about-photo about-counter-photo aspect-[1.5] sm:aspect-auto">
           <Image src="/images/about-us-showcase.jpg" alt="Fresh steaks displayed at the butcher counter" width={1536} height={1024} sizes="(min-width: 640px) 32vw, 100vw" />
         </div>
         <div className="about-photo about-parcel-photo aspect-[1.5] sm:aspect-auto">
-          <Image src="/images/about-us-showcase.jpg" alt="A carefully wrapped H&J Butchers parcel" width={1536} height={1024} sizes="(min-width: 640px) 38vw, 100vw" />
+          <Image src="/images/about-us-showcase.jpg" alt="A carefully wrapped butcher delivery parcel" width={1536} height={1024} sizes="(min-width: 640px) 38vw, 100vw" />
         </div>
       </section>
 

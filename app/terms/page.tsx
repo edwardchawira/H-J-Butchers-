@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/breadcrumb";
 
-export const metadata: Metadata = { title: "Terms & Conditions", description: "Terms for ordering from H&J Butchers concept storefront." };
+export const metadata: Metadata = { title: "Terms & Conditions", description: "Terms for ordering from the Just Butcher concept storefront." };
 
 export default function TermsPage() {
   return (

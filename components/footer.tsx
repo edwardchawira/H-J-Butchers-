@@ -1,4 +1,4 @@
-import { Camera, Globe, Mail, MapPin, Phone, PlayCircle } from "lucide-react";
+import { Camera, Globe, Mail, PlayCircle, Store } from "lucide-react";
 import Link from "next/link";
 
 const shopping = [
@@ -24,7 +24,7 @@ export function Footer() {
     <footer className="bg-charcoal text-cream">
       <div className="container-site grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h2 className="text-3xl text-white">H&amp;J Butchers</h2>
+          <h2 className="text-3xl text-white">Just Butcher</h2>
           <p className="mt-4 max-w-xs text-sm leading-7 text-white/65">
             The nation&apos;s local butcher. Premium cuts, responsibly sourced and delivered chilled to your door.
           </p>
@@ -51,17 +51,16 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="mb-5 font-sans text-xs font-bold uppercase tracking-[0.2em] text-gold">Visit & Contact</h3>
+          <h3 className="mb-5 font-sans text-xs font-bold uppercase tracking-[0.2em] text-gold">Demo Contact</h3>
           <address className="space-y-4 text-sm not-italic text-white/70">
-            <p className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />2 Cradley Rd, Netherton,<br />Dudley, DY2 9RB</p>
-            <p className="flex gap-3"><Phone className="h-4 w-4 text-gold" /><a href="tel:+447724609568">07724 609568</a></p>
-            <p className="flex gap-3"><Mail className="h-4 w-4 text-gold" /><a href="mailto:orders@hjbutchers.example">orders@hjbutchers.example</a></p>
+            <p className="flex gap-3"><Store className="mt-0.5 h-4 w-4 shrink-0 text-gold" />Independent food retail<br />Demo storefront</p>
+            <p className="flex gap-3"><Mail className="h-4 w-4 text-gold" /><a href="mailto:demo@justbutcher.example">demo@justbutcher.example</a></p>
           </address>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="container-site flex flex-col items-center justify-between gap-3 py-5 text-xs text-white/55 sm:flex-row">
-          <p>Copyright © 2026 H&amp;J Butchers. Concept storefront.</p>
+          <p>Copyright © 2026 Just Butcher. Concept storefront.</p>
           <p className="tracking-widest">VISA &nbsp; MASTERCARD &nbsp; AMEX &nbsp; APPLE PAY &nbsp; PAYPAL</p>
         </div>
       </div>

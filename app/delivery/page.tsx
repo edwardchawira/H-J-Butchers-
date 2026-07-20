@@ -5,7 +5,7 @@ import { Accordion } from "@/components/accordion";
 
 export const metadata: Metadata = {
   title: "Delivery Information",
-  description: "Chilled delivery times, pricing and packaging information for H&J Butchers orders.",
+  description: "Chilled delivery times, pricing and packaging information for Just Butcher orders.",
 };
 
 export default function DeliveryPage() {

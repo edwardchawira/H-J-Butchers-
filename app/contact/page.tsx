@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MessageSquare, Store } from "lucide-react";
 import { Accordion } from "@/components/accordion";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Contact the H&J Butchers team about delivery, products or your order.",
+  description: "Contact the Just Butcher demo team about delivery, products or your order.",
 };
 
 const faqs = [
@@ -26,15 +26,15 @@ export default function ContactPage() {
       </header>
       <section className="container-site grid gap-10 pb-16 lg:grid-cols-[1fr_1.35fr]">
         <aside className="rounded-sm bg-charcoal p-8 text-white sm:p-10">
-          <h2 className="text-3xl">Visit or call us</h2>
-          <p className="mt-4 text-sm leading-7 text-white/70">Have a cooking question or need a bespoke cut? Our counter team is glad to help.</p>
+          <h2 className="text-3xl">Demo contact</h2>
+          <p className="mt-4 text-sm leading-7 text-white/70">Use this area to show how a butcher, farm shop or food retailer can handle common customer enquiries.</p>
           <div className="mt-9 space-y-7 text-sm">
-            <p className="flex gap-4"><MapPin className="h-5 w-5 shrink-0 text-gold" />2 Cradley Rd<br />Netherton, Dudley<br />DY2 9RB</p>
-            <p className="flex gap-4"><Phone className="h-5 w-5 text-gold" /><a href="tel:+447724609568">07724 609568</a></p>
-            <p className="flex gap-4"><Mail className="h-5 w-5 text-gold" /><a href="mailto:hello@hjbutchers.example">hello@hjbutchers.example</a></p>
+            <p className="flex gap-4"><Store className="h-5 w-5 shrink-0 text-gold" />Independent food retail<br />Ecommerce demo storefront</p>
+            <p className="flex gap-4"><MessageSquare className="h-5 w-5 text-gold" />Product, delivery and order enquiry flows</p>
+            <p className="flex gap-4"><Mail className="h-5 w-5 text-gold" /><a href="mailto:demo@justbutcher.example">demo@justbutcher.example</a></p>
           </div>
-          <h3 className="mt-12 text-xl">Opening hours</h3>
-          <p className="mt-4 leading-7 text-white/70">Monday - Saturday: 9am - 5pm</p>
+          <h3 className="mt-12 text-xl">Demo coverage</h3>
+          <p className="mt-4 leading-7 text-white/70">Catalogue, basket, checkout, contact and customer support journeys.</p>
         </aside>
         <ContactForm />
       </section>

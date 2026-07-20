@@ -4,7 +4,7 @@ import { ShopCatalogue } from "@/components/shop-catalogue";
 
 export const metadata: Metadata = {
   title: "Shop Premium Meat",
-  description: "Browse fresh steaks, joints, poultry, burgers and BBQ selections from H&J Butchers.",
+  description: "Browse fresh steaks, joints, poultry, burgers and BBQ selections from Just Butcher.",
 };
 
 export default async function ShopPage({ searchParams }: { searchParams: Promise<{ search?: string }> }) {

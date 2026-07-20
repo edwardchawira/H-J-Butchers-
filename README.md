@@ -1,4 +1,4 @@
-# H&J Butchers
+# Just Butcher
 
 A premium online butcher storefront built with Next.js App Router, TypeScript and Tailwind CSS. The concept is inspired by traditional British butchery: rich oxblood and brass styling, category-led shopping, chilled delivery messaging and a complete mock purchase journey.
 

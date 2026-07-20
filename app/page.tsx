@@ -43,7 +43,7 @@ export default function Home() {
             ["Free Delivery", "On orders over £75"],
             ["Next Day Delivery", "Order before 2pm"],
             ["Great Quality Meat", "Craft butcher standards"],
-            ["Independent Butchers", "Founded by Heath & Wai Yee"],
+            ["Independent Butchers", "A flexible demo storefront"],
           ].map(([title, text]) => (
             <div key={title} className="flex items-center justify-center gap-4 text-center lg:border-r lg:border-soft-border last:border-r-0">
               <Award className="h-7 w-7 shrink-0 text-gold" />
@@ -107,7 +107,7 @@ export default function Home() {
       <section className="border-y border-soft-border bg-white py-16 sm:py-20">
         <div className="container-site">
           <div className="mb-10 text-center">
-            <p className="eyebrow">H&amp;J Butchers promise</p>
+            <p className="eyebrow">Just Butcher promise</p>
             <h2 className="section-title mt-3">Why choose us?</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-4">
