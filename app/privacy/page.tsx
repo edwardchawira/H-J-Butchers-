@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/breadcrumb";
 
-export const metadata: Metadata = { title: "Privacy Policy", description: "Privacy information for the Just Butcher concept storefront." };
+export const metadata: Metadata = { title: "Privacy Policy", description: "Privacy information for the Butcher concept storefront." };
 
 export default function PrivacyPage() {
   return (

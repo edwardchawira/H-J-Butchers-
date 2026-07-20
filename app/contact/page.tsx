@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Contact the Just Butcher demo team about delivery, products or your order.",
+  description: "Contact the Butcher demo team about delivery, products or your order.",
 };
 
 const faqs = [
@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="mt-9 space-y-7 text-sm">
             <p className="flex gap-4"><Store className="h-5 w-5 shrink-0 text-gold" />Independent food retail<br />Ecommerce demo storefront</p>
             <p className="flex gap-4"><MessageSquare className="h-5 w-5 text-gold" />Product, delivery and order enquiry flows</p>
-            <p className="flex gap-4"><Mail className="h-5 w-5 text-gold" /><a href="mailto:demo@justbutcher.example">demo@justbutcher.example</a></p>
+            <p className="flex gap-4"><Mail className="h-5 w-5 text-gold" /><a href="mailto:demo@butcher.example">demo@butcher.example</a></p>
           </div>
           <h3 className="mt-12 text-xl">Demo coverage</h3>
           <p className="mt-4 leading-7 text-white/70">Catalogue, basket, checkout, contact and customer support journeys.</p>

@@ -107,7 +107,7 @@ export default function Home() {
       <section className="border-y border-soft-border bg-white py-16 sm:py-20">
         <div className="container-site">
           <div className="mb-10 text-center">
-            <p className="eyebrow">Just Butcher promise</p>
+            <p className="eyebrow">Butcher promise</p>
             <h2 className="section-title mt-3">Why choose us?</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-4">

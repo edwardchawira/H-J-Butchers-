@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const socialImageAlt = "Just Butcher - Quality meats, expert service";
+export const socialImageAlt = "Butcher - Quality meats, expert service";
 export const socialImageSize = {
   width: 1200,
   height: 630,
@@ -63,7 +63,7 @@ export function createBrandSocialImage() {
               marginTop: "28px",
             }}
           >
-            Just Butcher
+            Butcher
           </div>
           <div
             style={{

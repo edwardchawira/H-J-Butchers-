@@ -22,21 +22,21 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Just Butcher | Premium Meat Delivered",
-    template: "%s | Just Butcher",
+    default: "Butcher | Premium Meat Delivered",
+    template: "%s | Butcher",
   },
   description:
     "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
   openGraph: {
     type: "website",
-    siteName: "Just Butcher",
-    title: "Just Butcher | Premium Meat Delivered",
+    siteName: "Butcher",
+    title: "Butcher | Premium Meat Delivered",
     description:
       "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Just Butcher | Premium Meat Delivered",
+    title: "Butcher | Premium Meat Delivered",
     description:
       "Premium British meat, expertly prepared and chilled for next-day doorstep delivery.",
   },

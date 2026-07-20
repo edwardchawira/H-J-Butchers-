@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Discover the Just Butcher concept storefront and its focus on quality meat, practical ecommerce journeys and expert service.",
+  description: "Discover the Butcher concept storefront and its focus on quality meat, practical ecommerce journeys and expert service.",
 };
 
 const values = [
@@ -41,7 +41,7 @@ export default function AboutPage() {
           </h1>
           <div className="mt-7 h-px w-36 bg-[#d4bda6]" aria-hidden="true" />
           <p className="mt-6 max-w-md text-[0.96rem] leading-7 text-charcoal">
-            Just Butcher is a premium ecommerce demo for independent butchers, farm shops and food retailers that want a polished online storefront.
+            Butcher is a premium ecommerce demo for independent butchers, farm shops and food retailers that want a polished online storefront.
           </p>
           <p className="mt-4 max-w-md text-[0.96rem] leading-7 text-charcoal">
             The experience is designed to show how product storytelling, category-led shopping and a smooth basket journey can help customers buy with confidence.
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="grid gap-1 bg-white p-1 sm:h-[clamp(220px,20.7vw,316px)] sm:grid-cols-[5fr_5fr_6fr]" aria-label="Just Butcher gallery">
+      <section className="grid gap-1 bg-white p-1 sm:h-[clamp(220px,20.7vw,316px)] sm:grid-cols-[5fr_5fr_6fr]" aria-label="Butcher gallery">
         <div className="about-photo about-shop-photo aspect-[1.5] sm:aspect-auto">
           <Image src="/images/about-us-showcase.jpg" alt="Premium butcher counter with prepared steaks" width={1536} height={1024} sizes="(min-width: 640px) 32vw, 100vw" />
         </div>

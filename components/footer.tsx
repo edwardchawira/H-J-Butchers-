@@ -24,7 +24,7 @@ export function Footer() {
     <footer className="bg-charcoal text-cream">
       <div className="container-site grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h2 className="text-3xl text-white">Just Butcher</h2>
+          <h2 className="text-3xl text-white">Butcher</h2>
           <p className="mt-4 max-w-xs text-sm leading-7 text-white/65">
             The nation&apos;s local butcher. Premium cuts, responsibly sourced and delivered chilled to your door.
           </p>
@@ -54,13 +54,13 @@ export function Footer() {
           <h3 className="mb-5 font-sans text-xs font-bold uppercase tracking-[0.2em] text-gold">Demo Contact</h3>
           <address className="space-y-4 text-sm not-italic text-white/70">
             <p className="flex gap-3"><Store className="mt-0.5 h-4 w-4 shrink-0 text-gold" />Independent food retail<br />Demo storefront</p>
-            <p className="flex gap-3"><Mail className="h-4 w-4 text-gold" /><a href="mailto:demo@justbutcher.example">demo@justbutcher.example</a></p>
+            <p className="flex gap-3"><Mail className="h-4 w-4 text-gold" /><a href="mailto:demo@butcher.example">demo@butcher.example</a></p>
           </address>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="container-site flex flex-col items-center justify-between gap-3 py-5 text-xs text-white/55 sm:flex-row">
-          <p>Copyright © 2026 Just Butcher. Concept storefront.</p>
+          <p>Copyright © 2026 Butcher. Concept storefront.</p>
           <p className="tracking-widest">VISA &nbsp; MASTERCARD &nbsp; AMEX &nbsp; APPLE PAY &nbsp; PAYPAL</p>
         </div>
       </div>
